@@ -10,8 +10,14 @@ function App() {
   return (
     <div className="App">
       <Message counter={count}/>
-      <button onClick={()=>setcount(count+1)}>
-        Value +</button>
+      <button onClick={()=>setcount(++count)}>
+        Value + </button>
+      <button onClick={()=>setcount(--count)}>
+        Value - </button>  
+      <br/>
+      <br/>
+      <button onClick={()=>setcount(0)}>
+        Reset </button>   
     </div>
   );
 }
